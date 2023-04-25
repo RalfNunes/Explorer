@@ -33,12 +33,18 @@ span, a {
 
 
 
-p { 
+p, #footer { 
   color: #7D7987;
   font-size: 14px;
   line-height: 28px;
 }
 
+.line {
+  width: 568px;
+  height: 0px;
+  margin: 0 auto 8px ;
+  border: 1px solid #ECEFF2;
+}
 
 #footer a + a {
   margin-left: 28px; /* logica: pegue A que anteiror a ele A ele coloque 28px a esquerda */
