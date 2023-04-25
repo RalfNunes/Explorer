@@ -1,11 +1,16 @@
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  margin: 0; /* os navegadores colocam 8px no top */
 }
 
 #hero {
   width: 592px;
-  margin: auto;
+  margin: 0 auto 72px;
+}
+
+#hero img {
+  margin-bottom: 72px;
 }
 
 
@@ -14,6 +19,7 @@ h1 {
   font-size: 49px;
   line-height: 56px;
   font-weight: normal;
+  margin-bottom: 32px;
 }
 
 h1 span {
@@ -32,3 +38,9 @@ p {
   font-size: 14px;
   line-height: 28px;
 }
+
+
+#footer a + a {
+  margin-left: 28px; /* logica: pegue A que anteiror a ele A ele coloque 28px a esquerda */
+} 
+
