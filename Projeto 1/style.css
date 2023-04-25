@@ -39,6 +39,7 @@ p, #footer {
   line-height: 28px;
 }
 
+
 .line {
   width: 568px;
   height: 0px;
@@ -50,3 +51,10 @@ p, #footer {
   margin-left: 28px; /* logica: pegue A que anteiror a ele A ele coloque 28px a esquerda */
 } 
 
+
+#balls {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.3;
+}
