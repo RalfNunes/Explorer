@@ -1,7 +1,23 @@
 h1 {
   font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+
+span, a {
+  color: #FF9900;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+p { 
+  color: #7D7987;
 }
