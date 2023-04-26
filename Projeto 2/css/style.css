@@ -8,3 +8,16 @@ body {
   border: 1px solid red;
 }
 
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  margin: 0;
+}
