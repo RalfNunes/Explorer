@@ -43,41 +43,38 @@ ul li a:hover {
   opacity: 1;
 }
 
-li,
-.title {
+li, h1 {
   font-family: "Mulish", sans-serif;
 }
 
-.main {
+main {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.title {
+h1 {
   font-size: 49px;
   line-height: 56px;
   color: #1f1534;
-
   font-weight: normal;
-
   width: 490px;
 }
 
-.title span {
+h1 span {
   color: #89c5cc;
   font-weight: bold;
 }
 
-.subtitle {
+p {
   font-size: 14px;
   line-height: 28px;
   color: #7d7987;
-
+  width: 439px;
   margin: 40px 0;
 }
 
-.button {
+button {
   color: white;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -94,6 +91,10 @@ li,
   border-radius: 4px;
 
   cursor: pointer;
+}
+
+button:hover {
+  background: #42856d;
 }
 
 .footer {
