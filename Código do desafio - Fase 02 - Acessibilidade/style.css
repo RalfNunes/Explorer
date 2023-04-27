@@ -97,7 +97,7 @@ button:hover {
   background: #42856d;
 }
 
-.footer {
+footer {
   font-size: 14px;
   line-height: 28px;
 
@@ -106,7 +106,7 @@ button:hover {
   margin-top: 80px;
 }
 
-.footer a {
+footer a {
   font-weight: bold;
 }
 
