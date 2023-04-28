@@ -1,6 +1,10 @@
 <!-- o action é pra onde ele vai ser enviado ex: /search -->
-<form action="/search" method="get">
 <!-- o são dois tipo de method: get/post  -->
 <!-- get: RECEBER e ENVIAR recurso, algum tipo de dado pela URL -->
 <!-- post: ENVIAR recurso, ele não recebe, os dado são pelo corpo HTML -->
+
+<form action="/search" method="get">
+  <input type="text" name="q" id="search">
+  <input type="hidden" name="sxsrf" value="APq-WBv8RWu68Cb_MsZN-zsDa2zXzsJ">
+  <input type="submit" value="Pesquisar">
 </form>
