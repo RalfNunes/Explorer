@@ -27,7 +27,7 @@
 
     <!-- FORMS -->
     <form>
-      <!-- FIELDSET -->
+      <!-- FIELDSET EVENT-->
       <fieldset>
         <div class="fieldset-wrapper">
           <legend> Informação do Evento</legend>
@@ -56,13 +56,84 @@
           <!-- EVENT EXTRAS -->
           <div class="input-wrapper">
             <label for="even-info">Informações Extras</label>
-            <textarea  id="even-info" ></textarea>
+            <textarea id="even-info"></textarea>
           </div>
           <!-- END EVENT EXTRAS -->
 
+          <!-- EVENT CATEGORY -->
+          <div class="input-wrapper">
+            <label for="event-category">Whatsapp para contato <span>(somente números)</label></span>
+            <select id="event-category">
+              <option value="live">Ao Vivo</option>
+              <option value="podcast">PodCast</option>
+              <option value="mendorship">Mendoria</option>
+            </select>
+          </div>
+          <!-- END EVENT CATEGORY -->
+
         </div>
       </fieldset>
-      <!-- END FIELDSET -->
+      <!-- END FIELDSET EVENT -->
+
+      <!-- FIELDSET EVENT PRIVACIDADE-->
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Privacidade</legend>
+
+          <!-- EVENT EMAIL -->
+          <div class="input-wrapper">
+            <label for="event-email">E-mail do administrador <span>(digite um email válido)</label></span>
+            <input type="email" id="event-email" />
+          </div>
+          <!-- END EVENT EMAIL -->
+
+          <!-- EVENT PASSWORD -->
+          <div class="input-wrapper">
+            <label for="event-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</label></span>
+            <input type="password" id="event-password" />
+          </div>
+          <!-- END EVENT PASSWORD -->
+
+          <!-- EVENT BUTTON -->
+
+          <!-- END EVENT BUTTON -->
+
+        </div>
+      </fieldset>
+      <!-- END FIELDSET PRIVACIDADE -->
+
+      <!-- FIELDSET EVENT DATE-->
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Data e Hora</legend>
+          <div class="col-3">
+
+            <!-- EVENT DATE -->
+            <div class="input-wrapper">
+              <label for="event-date">Data</label>
+              <input type="date" id="event-date" />
+            </div>
+            <!-- END EVENT DATE -->
+
+            <!-- EVENT BEGIN -->
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin" />
+            </div>
+            <!-- END EVENT BEGIN -->
+
+            <!-- EVENT END -->
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end" />
+            </div>
+            <!-- END EVENT END -->
+
+          </div>
+        </div>
+      </fieldset>
+      <!-- END FIELDSET DATE -->
+
     </form>
     <!-- END FORMS -->
   </div>
