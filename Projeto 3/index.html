@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap"
+    rel="stylesheet">
   <!-- TITLE -->
   <title>Crie o seu Evento</title>
   <!-- CSS -->
   <link rel="stylesheet" href="/Projeto 3/css/style.css">
 </head>
+
 <body>
   <!-- PAGE -->
   <div class="page">
@@ -21,18 +24,50 @@
       <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
     </header>
     <!-- END HEADER -->
+
     <!-- FORMS -->
     <form>
+      <!-- FIELDSET -->
       <fieldset>
-        <legend> Informação do Evento</legend>
-        <div class="input-wrapper">
-          <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</label></span>
-          <input type="text" id="event-title" />
+        <div class="fieldset-wrapper">
+          <legend> Informação do Evento</legend>
+
+          <!-- EVENT TITLE -->
+          <div class="input-wrapper">
+            <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</label></span>
+            <input type="text" id="event-title" />
+          </div>
+          <!-- END EVENT TITLE -->
+
+          <!-- EVENT LINK -->
+          <div class="input-wrapper">
+            <label for="event-link">Link do Evento <span>(comece com o https://)</label></span>
+            <input type="url" id="event-link" />
+          </div>
+          <!-- END EVENT LINK -->
+
+          <!-- EVENT WHATSAPP -->
+          <div class="input-wrapper">
+            <label for="event-whatsapp">Whatsapp para contato <span>(somente números)</label></span>
+            <input type="number" id="event-whatsapp" />
+          </div>
+          <!-- END EVENT WHATSAPP -->
+
+          <!-- EVENT EXTRAS -->
+          <div class="input-wrapper">
+            <label for="even-info">Informações Extras</label>
+            <textarea  id="even-info" ></textarea>
+          </div>
+          <!-- END EVENT EXTRAS -->
+
         </div>
       </fieldset>
+      <!-- END FIELDSET -->
     </form>
     <!-- END FORMS -->
- </div>
- <!-- END PAGE -->
+  </div>
+  <!-- END PAGE -->
+
 </body>
+
 </html>
