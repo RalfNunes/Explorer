@@ -19,7 +19,48 @@
     <h1>avalie a sua mentoria</h1>
     <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
     <img src="/Recriando layout - Fase 03.1/images/img1.png" alt="logo de uma estrelas preenchidas">
+
+    <div class="sub-header">
+      <h1>Informações pessoais</h1>
+    </div>
   </header>
+
+  <div class="page">
+
+    <form action="my-form">
+
+      <!-- info-basica -->
+      <fieldset>
+        <div class="fielset-wrapper">
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input type="text" id="name">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="lastname">Sobrenome</label>
+              <input type="text" id="lastname">
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="email">E-mail <span>(digite um email válido)</span></label>
+            <input type="email" id="email">
+          </div>
+
+        </div>
+      </fieldset>
+      <!-- info-mentor -->
+      <fieldset>
+        <div class="fielset-wrapper">
+          <div class="input-wrapper">
+            <legend>Informações do mentor</legend>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </body>
 
 </html>
