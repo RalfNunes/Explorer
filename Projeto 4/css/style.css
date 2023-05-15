@@ -50,7 +50,7 @@ main p:first-child {
 }
 
 
-h1+p {
+h1 + p {
   color: rgba(10, 0, 57, 0.64);
   line-height: 3.2rem;
   margin-bottom: 3.2rem;
@@ -70,6 +70,20 @@ main ul {
   margin-top: 7.2rem;
 }
 
+main ul li {
+  color: #090039;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  max-width: 25.7rem;
+  display: flex;
+  gap: 3.8rem;
+  }
+
+main ul li + li {
+  margin-top: 3.2rem;
+}
+
 main ul li span {
 color: #090039;
 font-weight: 800;
@@ -78,17 +92,39 @@ line-height: 8.0rem;
 letter-spacing: -0.2px;
 }
 
-main ul li {
-color: #090039;
-font-weight: 700;
-font-size: 2.4rem;
-line-height: 3.2rem;
-max-width: 25.7rem;
-display: flex;
-gap: 3.8rem;
+main ul li span:first-child {
+  min-width: 4.6rem;
+  text-align: center;
 }
 
-ul li span:first-child {
-    min-width: 4.6rem;
-    text-align: center;
+/* media queries */
+@media (min-width: 700px) {
+
+  body { 
+    padding: 8rem;
+  }
+
+  main {
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+  }
+
+  main > div { 
+    max-width: 484px;
+  }
+
+  main ul {
+    margin-top: 5.2rem;
+  }
+  main ul li { 
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+
+  main ul li + li {
+    margin-top: 3.2rem;
+  }
+
 }
