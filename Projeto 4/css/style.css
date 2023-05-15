@@ -1,0 +1,19 @@
+/* fontes */
+/* font-family: 'Epilogue', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  padding: 60px 23px 66px;
+  font-family: 'Epilogue', sans-serif;
+  background: #ECE9FD;
+}
+
+ul {
+  list-style: none;
+}
