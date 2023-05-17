@@ -12,7 +12,7 @@
 
 <p align="center">
   <img  alt="">
-  <img alt="Stage 02 - Formulários, Validações e Customizações" src=".github/preview.png" width="100%">
+  <img alt="Stage 03 - Formulários, Validações e Customizações" src=".github/preview.png" width="100%">
 </p>
 
 <br>
