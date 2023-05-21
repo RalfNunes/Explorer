@@ -1,0 +1,150 @@
+/* google fonts 
+font-family: 'Palanquin', sans-serif;
+font-family: 'Staatliches', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font-family = ff */
+  --ff-font-heading: 'Staatliches', cursive;
+  --ff-font-texting: 'Palanquin', sans-serif;
+
+  font-size: 62.5%;
+  /* font-size = fs */
+  --fs-body: 1.6rem;
+  --fs-heading: 4rem;
+  --fs-texting: 1.4rem;
+
+
+  /* background-color */
+  --bc-primary:hsla(218, 17%, 62%, 1);
+  --bc-secondary: hsla(275, 18%, 79%, 1);
+  --bc-card: hsla(233, 100%, 97%, 1);
+  --bc-span: hsla(312, 91%, 96%, 1);
+  
+  /* font-color */
+  --fc-primary: hsla(0, 0%, 100%, 1);
+  --fc-secondary: hsla(274, 84%, 12%, 1);
+  --fc-span: hsla(232, 17%, 35%, 1);
+}
+
+body {
+  font-family: var(--ff-font-texting);
+  font-size: var(--fs-body);
+  background-color: var(--bc-card);
+}
+
+.page {
+  max-width: 39rem;
+  margin: 0 auto;
+}
+
+img { 
+  width: 100%;
+  height: auto;
+}
+
+header {
+  height: 27.9rem;
+  background-color: var(--bc-primary);
+  text-align: center;
+}
+
+header img {
+  width: 13.7rem;
+  height: 13.7rem;
+  margin-bottom: 3.2rem;
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+header h1 {
+  padding: 0.8rem 8.5rem;
+  background-color: var(--bc-secondary);
+  text-align: center;
+  color: var(--fc-primary);
+  font-family: var(--ff-font-heading);
+  font-weight: 400;
+  font-size: var(--fs-heading);
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+.text {
+  width: 31.5rem;
+  text-align: center;
+  margin: 1.4rem 4.0rem;
+}
+
+.text p {
+  font-size: var(--fs-texting);
+  font-family: var(--ff-font-texting);
+  color: var(--fc-secondary);
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+main {
+  padding: 6.3rem 3.2rem 6.0rem;
+}
+
+.cards {
+  display: grid;
+  gap: 3.2rem;
+}
+
+.cards .card {
+  position: relative;
+  height: fit-content;
+}
+
+.cards .card img {
+  object-fit: cover;
+  border-radius: 2.0rem;
+}
+
+.cards .card h2 {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  font-family: var(--ff-font-heading);
+  font-weight: 400;
+  font-size: var(--fs-texting);
+  line-height: 3.2rem;
+  letter-spacing: 0.05em;
+  color: var(--fc-span);
+}
+
+.cards .card h2 span {
+  background-color: var(--bc-span);
+  border-radius: 2rem;
+  width: fit-content;
+  padding: 0.1rem 2.4rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cards  {
+  grid-template-areas: "A" "B" "C" "D"
+}
+
+.cards div:nth-child(1){
+  grid-area: A;
+}
+
+.cards  div:nth-child(2){
+  grid-area: B;
+}
+
+.cards  div:nth-child(3){
+  grid-area: C;
+}
+
+.cards  div:nth-child(4){
+  grid-area: D;
+}
