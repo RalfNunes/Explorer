@@ -21,17 +21,17 @@ font-family: 'Staatliches', cursive; */
   --fs-heading: clamp(4rem, 1rem + 5vw, 4.8rem);
   --fs-texting: clamp(1.4rem, 0.5rem + 4vw, 1.4rem);
 
-   /* padding */
-   --pd-h1: clamp(2rem, 1rem + 2vw, 5.6rem);
+  /* padding */
+  --pd-h1: clamp(2rem, 1rem + 2vw, 5.6rem);
 
-   /* img-size */
-   --img-sz: clamp(13.7rem, 19rem + 5vw, 26rem);
+  /* img-size */
+  --img-sz: clamp(13.7rem, 19rem + 5vw, 26rem);
 
-   /* width */
-   
+  /* width */
 
-   /* margin-text */
-   
+
+  /* margin-text */
+
 
 
   /* background-color */
@@ -45,7 +45,7 @@ font-family: 'Staatliches', cursive; */
   --fc-secondary: hsla(274, 84%, 12%, 1);
   --fc-span: hsla(232, 17%, 35%, 1);
 
- 
+
 }
 
 body {
@@ -109,12 +109,8 @@ header h1 {
 }
 
 main {
-  padding: 6.3rem 3.2rem 6.0rem;
-}
-
-.cards {
   display: grid;
-  gap: 3.2rem;
+  padding: 6.3rem 3.2rem 6.0rem;
 }
 
 .cards .card {
@@ -152,11 +148,6 @@ main {
 @media (min-width: 400px) {
   .text {
     margin: 1.4rem auto 0;
-
-  }
-
-  .card {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -191,21 +182,22 @@ main {
   }
 
 
-  main {
+  main .cards{
     display: grid;
     width: 120rem;
     height: auto;
   }
 
-  main {
-    grid-template-areas: "A B B" "C C D" 
+  main .cards .card img {
+    width: 22rem;
+    height: 15.0rem;
   }
 
-  main .cards {
-    display: flex;
+  main { 
+    grid-template-areas: "A B B" "C C D"
   }
 
- main .cards div:nth-child(1) {
+  main .cards div:nth-child(1) {
     grid-area: A;
   }
 
