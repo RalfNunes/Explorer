@@ -1,0 +1,19 @@
+<script>
+  // const e let são locais e só funcionam no escopo onde for criada
+  // hoisting não funcina para const e let
+
+  let y = 1; // => esse é um bloco
+  { // => é outro bloco
+    let y = 0
+    console.log('> existe Y ?', y)
+  }
+  console.log('> existe Y antes do bloco? ', y)
+
+  const y = 1;
+  {
+    const y = 0
+    console.log('> existe Y ?', y)
+  }
+  console.log('> existe Y antes do bloco? ', y)
+
+</script>
