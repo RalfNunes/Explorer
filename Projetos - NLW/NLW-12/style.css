@@ -57,12 +57,12 @@ body {
 nav {
   padding: 64px;
   grid-area: timeline;
-
+  animation: entering 0.7s ease-in-out;
   overflow-y: scroll;
 }
 
-nav a {
-  animation: entering 0.7s ease-in-out;
+nav div:hover{
+  box-shadow: rgba(99, 59, 188, 1) 0.6rem 0.2rem 1.6rem 0rem, rgba(237, 86, 54, 1) -0.6rem -0.2rem 1.6rem 0rem; 
 }
 
 .memory {
@@ -184,6 +184,8 @@ aside span {
   border: 4px solid transparent;
   background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
   linear-gradient(260deg,  #633bbc, #ed5636, #d39e33) border-box;
+
+  box-shadow: rgba(99, 59, 188, 1) 0.6rem 0.2rem 1.6rem 0rem, rgba(237, 86, 54, 1) -0.6rem -0.2rem 1.6rem 0rem;
 }
 
 @media (max-width: 768px){
