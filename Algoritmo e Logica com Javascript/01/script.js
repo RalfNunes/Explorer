@@ -7,9 +7,6 @@ Pergunte o nome do usuário e escreva a mensagem: "Olá, [nome do usuário]"
 
 Como resolver problemas na linguagem de programação ?
 Como melhorar minha lógica de programação ? 
-
-
-
 */
 
 /*
@@ -17,7 +14,6 @@ Como melhorar minha lógica de programação ?
 
   Pergunte o nome do usuário e escreva a mensagem:
   "Olá, [nome do usuário]"
-
 */
 
 let nome = prompt("Qual o seu nome?")
