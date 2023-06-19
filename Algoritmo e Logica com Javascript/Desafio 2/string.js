@@ -4,7 +4,6 @@ const students = [
     name: "Rafael",
     n1: 10,
     n2: 10,
-    media: []
   },
   // student 2
   {
@@ -34,18 +33,24 @@ const students = [
 
 // função calcular 
 function calculation(n1, n2){
-  return ((n1 + n2) / 2).toFixed(2);
-}
-
-function printStudent(student) {
-  return `
-  A media do(a) aluno(a): ${student.name} é: ${calculation(student.n1, student.n2)}
-  
-  `
+  let media = (n1 + n2) / 2; 
+  return media
 }
 
 //  para um student de students faça
 for (let student of students){
-  let sumMessage = printStudent(student);
-  alert(sumMessage);
+  mediaIndividual = calculation(student.n1, student.n2);
+
+  let sumMessage = mediaIndividual < 7 
+  ? "Infelizmente não foi dessa vez, Estude mais!" 
+  : "Parabéns pela sua Aprovação!";
+
+  alert(`A media do(a) aluno(a) ${student.name} é: ${mediaIndividual} 
+${sumMessage}`)
 }
+
+// function printStudent(student) {
+//   return `
+//   A media do(a) aluno(a): ${student.name} é: ${sumMessage}
+//   `
+// }
