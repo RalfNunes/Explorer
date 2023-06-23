@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+
+  /* background-color */
+  --bg-default: #F9F4FB;
+  --bg-white: #FFFFFF; 
+  --bg-azul: #312D64;
+  --bg-pink: #B52184;
+  --bg-gradient: background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+
+  /* font-size */
+  --fs-title: 5.8rem;
+  --fs-span: 3.2rem;
+  --fs-colums-title: 3.5rem;
+  --fs-colums-text: 1.9rem;
+  --fs-form-title: 4.2rem;
+  --fs-form-text: 1.6rem;
+  --fs-button-text: 1.4rem;
+
+
+}
+
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
