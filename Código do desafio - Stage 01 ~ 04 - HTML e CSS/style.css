@@ -2,15 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Mulish', sans-serif;
 }
-:root {
-  font-size: 62.5%;
 
+
+:root {
+  font-size: 62.5%; /* padrão 16px */
   /* background-color */
   --bg-default: #F9F4FB;
   --bg-white: #FFFFFF; 
-  --bg-azul: #312D64;
-  --bg-pink: #B52184;
+  --fc-azul: #312D64;
+  --fc-pink: #B52184;
   --bg-gradient: background: linear-gradient(134deg, #343193 0%, #302C63 100%);
 
   /* font-size */
@@ -21,11 +25,6 @@
   --fs-form-title: 4.2rem;
   --fs-form-text: 1.6rem;
   --fs-button-text: 1.4rem;
-
-
 }
 
 
-body {
-  font-family: 'Mulish', sans-serif;
-}
