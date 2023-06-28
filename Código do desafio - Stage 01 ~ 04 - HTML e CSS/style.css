@@ -1,30 +1,96 @@
+ /* Setting Default */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased; 
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Mulish', sans-serif;
 }
 
 
 :root {
   font-size: 62.5%; /* padrão 16px */
   /* background-color */
+  --base-font: 'Mulish', sans-serif;
+
+  /* color */
   --bg-default: #F9F4FB;
   --bg-white: #FFFFFF; 
-  --fc-azul: #312D64;
+  --fc-blue: #312D64;
   --fc-pink: #B52184;
   --bg-gradient: background: linear-gradient(134deg, #343193 0%, #302C63 100%);
 
   /* font-size */
-  --fs-title: 5.8rem;
-  --fs-span: 3.2rem;
-  --fs-colums-title: 3.5rem;
-  --fs-colums-text: 1.9rem;
-  --fs-form-title: 4.2rem;
+  --fs-title: 3.2rem;
+  --fs-span: 2.0rem;
+
+  --fs-colums-title: 2.9rem;
+  --fs-colums-text: 1.6rem;
+
+  --fs-form-title: 3.2rem;
   --fs-form-text: 1.6rem;
   --fs-button-text: 1.4rem;
 }
 
+body { 
+  font-family: var(--base-font);
+}
 
+img { 
+  width: 100%;
+  display: block;
+}
+
+
+h1 { 
+  font-size: var(--fs-title);
+  color: var(--fc-pink);
+  width: 900;
+  margin: 1.7rem 0 0.5rem;
+}
+
+h2 { 
+  font-size: var(--fs-form-title);
+  color: var(--fc-pink);
+  width: 900;
+}
+
+h3 {
+  font-size: var(--fs-colums-title);
+  color: var(--fc-pink);
+  width: 900;
+}
+
+span { 
+  font-size: var(--fs-span);
+  color: var(--fc-blue);
+}
+
+p { 
+  font-size: var(--fs-colums-text);
+  color: var(--fc-blue);
+}
+
+
+/* Section Banner*/
+#banner {
+  padding: 0 3.4rem 9.3rem 3.2rem;
+  background-color: var(--bg-default);
+}
+
+#banner .title {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+#banner .title .button-down img{
+  width: 5.8rem;
+  margin: 3.5rem 18rem 0;
+  transition: filter 300ms;
+}
+
+#banner .title .button-down img:hover{
+  filter: brightness(0.1)
+}
