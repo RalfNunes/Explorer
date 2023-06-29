@@ -18,7 +18,7 @@
   --bg-white: #FFFFFF; 
   --fc-blue: #312D64;
   --fc-pink: #B52184;
-  --bg-gradient: background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+  --bg-gradient: linear-gradient(134deg, #343193 0%, #302C63 100%);
 
   /* font-size */
   --fs-title: 3.2rem;
@@ -72,11 +72,11 @@ p {
   font-weight: 600;
 }
 
-
 /* Section Banner*/
 #banner {
   padding: 0 3.4rem 9.3rem 3.2rem;
   background-color: var(--bg-default);
+  width: 100%;
 }
 
 #banner .title {
@@ -100,6 +100,11 @@ p {
 /* Section Cards */
 
 #cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   padding: 5.2rem 9.2rem;
   background: var(--fc-blue);
 }
@@ -118,7 +123,6 @@ p {
 }
 
 #cards .card img {
-  border: 1px solid red ;
   width: 8.0rem;
   height: 8.0rem;
 }
@@ -127,3 +131,63 @@ p {
   margin-bottom: 2.0rem;
 }
 
+
+/* Section contact */
+
+#contact {
+  width: 100%;
+  height: 100%;
+  padding: 7.8rem 4.0rem 6.5rem;
+  background: var(--bg-default);
+}
+
+#contact form h2 {
+  margin-bottom: 4.3rem;
+}
+
+#contact fieldset {
+  border: none;
+}
+
+#contact fieldset .input-wrapper{ 
+  margin-bottom: 2.4rem;
+}
+
+#contact fieldset .input-wrapper input,
+#contact form .input-wrapper textarea { 
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.4rem;
+  border: 0.15rem solid var(--fc-blue);
+  border-radius: 1.6rem;
+  font-size: var(--fs-form-text);
+  font-weight: 600;
+  font-family: var(--base-font);
+}
+
+#contact fieldset .input-wrapper textarea {
+  height: 12.6rem;
+}
+
+
+#contact form button {
+  height: 4.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs-form-text);
+  font-weight: 700;
+  font-family: var(--base-font);
+  padding: 1.6rem;
+  color: var(--bg-white);
+  border-radius: 1.6rem;
+  border: 0.15rem solid;
+}
+
+#contact button { 
+  background: var(--bg-gradient);
+  transition: filter 300ms;
+}
+
+#contact button:hover { 
+  filter: brightness(1.5);
+}
