@@ -155,21 +155,37 @@ p {
   margin-bottom: 2.4rem;
 }
 
+#contact fieldset .input-wrapper input {
+  padding: 1.2rem 5.0rem 1.4rem;
+}
+
+#contact form .input-wrapper textarea {
+  padding: 1.2rem 1.6rem 1.4rem;
+}
+
 #contact fieldset .input-wrapper input,
 #contact form .input-wrapper textarea { 
   width: 100%;
-  padding: 1.2rem 1.6rem 1.4rem;
   border: 0.15rem solid var(--fc-blue);
   border-radius: 1.6rem;
   font-size: var(--fs-form-text);
   font-weight: 600;
   font-family: var(--base-font);
+  background: var(--bg-default);
 }
 
 #contact fieldset .input-wrapper textarea {
   height: 12.6rem;
 }
 
+
+#contact #name {
+  background: url(./images/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#contact #email {
+  background: url(./images/at.svg) no-repeat scroll 1.4rem 1.2rem;
+}
 
 #contact form button {
   height: 4.5rem;
