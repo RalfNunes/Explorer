@@ -30,6 +30,8 @@
   --fs-form-title: 3.2rem;
   --fs-form-text: 1.6rem;
   --fs-button-text: 1.4rem;
+
+  --fs-footer-text: 1.9rem;
 }
 
 body { 
@@ -190,4 +192,22 @@ p {
 
 #contact button:hover { 
   filter: brightness(1.5);
+}
+
+/* Footer */
+
+footer { 
+  height: 7.8rem;
+  background: var(--bg-gradient);
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+
+}
+
+footer p {
+  color: var(--bg-white);
+  font-size: var(--fs-footer-text)
 }
