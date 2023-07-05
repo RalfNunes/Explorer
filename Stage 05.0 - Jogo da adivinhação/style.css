@@ -22,6 +22,25 @@ body, input, button {
   font-family: 'DM Sans', sans-serif;
 }
 
+button {
+  background-color: #7879F1;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
+  cursor: pointer; /* ativa a mãozinha do mouse */
+  transition: background .3s; /* suaviza a transição do elemente no caso background */
+}
+
+
+button:hover {
+  background-color: #6363ce;
+}
+
+
+.hide {
+  display: none;
+}
+
 main {
   border-radius: 0.6rem;
   background: #FFF;
@@ -39,6 +58,8 @@ h1 {
   font-size: 2.4rem;
   margin-bottom: 1.6rem;
 }
+
+/* screen1 */
 
 h1, p {
   color: #34355B;
@@ -68,9 +89,14 @@ input {
   
 }
 
-button {
-  background-color: #7879F1;
-  color: #FFF;
-  font-weight: bold;
-  border-radius: 0rem 0.4rem 0.4rem 0rem;
+/* screen2 */
+h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #34355B;
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: 0.4rem;
 }
