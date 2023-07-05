@@ -33,6 +33,7 @@ main {
   text-align: center;
 }
 
+/* section title and sub-title */
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
@@ -47,6 +48,29 @@ p {
   opacity: 0.8;
 }
 
+
+/* section button */
 form {
   margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background-color: #DCE2E9;
+  width: 6rem;
+  border-radius: 0.4rem 0rem 0rem 0.4rem;
+  
+}
+
+button {
+  background-color: #7879F1;
+  color: #FFF;
+  font-weight: bold;
+  border-radius: 0rem 0.4rem 0.4rem 0rem;
 }
