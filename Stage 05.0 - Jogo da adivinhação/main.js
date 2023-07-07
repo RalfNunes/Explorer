@@ -19,8 +19,9 @@ function handleTryClick(event) {
     screen1.classList.add("hide") 
     // achar a classe no html e remover
     screen2.classList.remove("hide")
-    // mostrar na proxima tela as tentativas 
-    document.querySelector(".screen2 h2").innerText = `Acertou em ${xAttempts} tentativas`
+    // mostrar na proxima tela as tentativas
+    // podemos buscar no próprio elemento 
+    screen2.querySelector("h2").innerText = `Acertou em ${xAttempts} tentativas`
   }
 
   // deixar o input vazio
@@ -37,6 +38,7 @@ const btnReset = document.querySelector("#btnReset")
 
 // nome do evento 'click' depois colocar o função que vai reagir 
 btnTry.addEventListener('click', handleTryClick)
+// aqui tem a declaração de uma função anomina
 btnReset.addEventListener('click', function() {
   screen1.classList.remove("hide")
   screen2.classList.add("hide")
