@@ -12,17 +12,14 @@ let randomNumber = Math.round(Math.random() * 10)
 // variavel de controle 
 let xAttempts = 1 
 
+const btnKeydown = document.querySelector('keydown')
+
 // # EVENTOS 
 // nome do evento 'click' depois colocar o função que vai reagir 
 btnTry.addEventListener('click', handleTryClick)
 btnReset.addEventListener('click', handleResetClick)
 // função vai limpar o 'Enter', na parte da function vai ter receber um evento
-document.addEventListener('keydown', function(e) ){
-  // evento.tecla"KEY" = 'nome do ação', só vai ser ativo na segunda tela .screen2 porque as duas opções são verdadeiras.
-  if(e.key == 'Enter' && screen1.classList.contains('hide')) {
-    handleResetClick()
-  }
-}
+btnKeydown.addEventListener('keydown', handleKeyDown)
 
 // # FUNÇÕES ou METODOS
 // essa funcão feita para capturar o evento do "click"
@@ -42,10 +39,10 @@ function handleTryClick(event) {
     // podemos buscar no próprio elemento 
     screen2.querySelector("h2").innerText = `Acertou em ${xAttempts} tentativas`
   }
+  
 
   // deixar o input vazio
   inputNumber.value =""
-
 
   xAttempts++
 }
@@ -62,3 +59,9 @@ function toogleScreen(){
   screen2.classList.toggle("hide")
 }
 
+function handleKeyDown(){
+  // evento.tecla"KEY" = 'nome do ação', só vai ser ativo na segunda tela .screen2 porque as duas opções são verdadeiras.
+  if(e.key == 'Enter' && screen1.classList.contains('hide')) {
+    handleResetClick()
+  }
+}
