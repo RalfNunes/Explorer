@@ -12,3 +12,18 @@ body {
  background-color: #040924;
  font-size: 1.6rem;
 }
+
+.container {
+  height: 100vh; /* pegar a tela inteira  */
+  display: grid; 
+  place-content: center; /* vai manter as mesma propriedade do .card */
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+  padding: 4.8rem 6.4rem 6.4rem;
+  max-width: 42.8rem;
+  margin-inline: auto; /* deixar no centro da tela */
+}
