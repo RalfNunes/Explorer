@@ -1,6 +1,6 @@
 import { Modal } from './modal.js'
 import { AlertError } from './alert-error.js'
-
+import {IMC, notNumber} from './utils.js'
 
 // variaveis - variables 
 const form = document.querySelector('form')
@@ -12,17 +12,6 @@ const inputHeight = document.querySelector('#height')
 // form.onsubmit () => {} // MANEIRA 2
 // form.onsubmit = handleSubmit // MANEIRA 3
 // function handleSubmit(){}
-
-// função para calcular 
-function IMC(weight, height) {
-  return (weight / ((height / 100) ** 2)).toFixed(2)
-}
-
-// essa função sempre vai retornar um boleano true or false
-function notNumber(value) {
-  return isNaN(value) || value == ""
- }
-
 
 form.onsubmit = function(event) {
   event.preventDefault() // evitar o padrão, não fazer
