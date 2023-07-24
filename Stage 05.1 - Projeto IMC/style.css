@@ -90,7 +90,7 @@ form input::placeholder {
   margin-top: 1.6rem;
 }
 
-button {
+form button {
   margin-top: 3.2rem;
   padding: 1.6rem;
   width: 100%;
@@ -112,10 +112,47 @@ button {
   
 }
 
-button:hover {
+form button:hover {
   background: var(--bg-button-hover);
 }
 
+/* modal é o mesmo que pop-up */
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-wrapper {
+  position: absolute; /* criar uma nova camada */
+  inset: 0; /* faz com que não precisse escrever "right, left, top, bottom" */
+  background: rgba(0, 0, 0, 0.70);
+
+  display: grid;
+  place-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  position: relative;
+}
+
+.modal button {
+  background: none;
+  border: none;
+
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.modal button:hover {
+  transform: scale(1.1);
+}
 
 /* mobile */
 
