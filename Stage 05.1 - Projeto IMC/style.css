@@ -14,6 +14,7 @@
   --tt-placeholder: rgba(73, 80, 87, 0.50);
   --ot-input: #02799D;
   --bd-input: rgba(73, 80, 87, 0.30);
+  --bg-input: #DCE2E9;
 
   --tt-button: #fff;
   --bg-button: #02799D;
@@ -41,4 +42,43 @@ body {
   padding: 4.8rem 6.4rem 6.4rem;
   max-width: 42.8rem;
   margin-inline: auto; /* deixar no centro da tela */
+}
+
+.title {
+  font-size: 3.2rem;
+  line-height: 4.0rem;
+  color: var(--tt-heading)
+}
+
+form h1 {
+  margin-bottom: 3.2rem;
+}
+
+form label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--tt-label);
+  margin-bottom: 0.8rem; /* display inline não aceita margin */
+  display: block; 
+}
+
+form input {
+  width: 100%; /* vai fazer com que ele quebre a linha */
+  border: 1px solid var(--bd-input);
+  background: var(--bg-input);
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+}
+
+form input:focus {
+  outline: 2px solid var(--ot-input);
+  /* focus é quando o mouse esta encima  */
+}
+
+form input::placeholder {
+  color: var(--tt-placeholder)
+}
+
+.input-wrapper + .input-wrapper{
+  margin-top: 1.6rem;
 }
