@@ -16,10 +16,21 @@ function IMC(weight, height) {
   return (weight / ((height / 100) ** 2)).toFixed(2)
 }
 
+// essa função sempre vai retornar um boleano true or false
+function notNumber(value) {
+  return isNaN(value) || value == ""
+ }
+
+
 form.onsubmit = function(event) {
   event.preventDefault() // evitar o padrão, não fazer
   const weight = inputWeight.value // capturar o valor do peso
-  const height = inputHeight.value // capturar o valor do peso
+  const height = inputHeight.value // capturar o valor do altura
+
+  const showAlertError = notNumber(weight) || notNumber(height)
+  if (showAlertError) {
+    return;
+  }
 
   const result = IMC(weight, height) // chamando a função
   const message = `Seu IMC é de ${result}` // mostrando a mensagem
