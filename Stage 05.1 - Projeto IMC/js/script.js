@@ -1,21 +1,10 @@
+import { Modal } from './modal.js'
+
 // variaveis - variables 
 const form = document.querySelector('form')
 const inputWeight = document.querySelector('#weight')
 const inputHeight = document.querySelector('#height')
 
-// separando o modal para ajudar melhorar o entendimento, criando um metodo
-const Modal = {
-  wrapper:  document.querySelector('.modal-wrapper'), // abrir e fechar o modal
-  message:  document.querySelector('.modal .title span'), // o span no html
-  buttonClose: document.querySelector('.modal button.close'), // 
-
-  open() {
-    Modal.wrapper.classList.add('open')
-  },
-  close() {
-    Modal.wrapper.classList.remove('open')
-  }
-}
 
 // 3 maneiras de criar e atrixbuir função a um evento
 // form.onsubmit () => {} // MANEIRA 2
@@ -39,7 +28,4 @@ form.onsubmit = function(event) {
   Modal.open()
 }
 
-// fechar a janela do modal
-Modal.buttonClose.onclick = () => {
-  Modal.close()
-}
+
