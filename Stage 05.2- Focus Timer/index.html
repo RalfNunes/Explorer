@@ -18,7 +18,7 @@
   <div id="app">
     <!-- switch light and black -->
     <button id="toggle-mode">
-      <!-- <span>Ativar/Desativar Light Mode</span> -->
+      <span class="sr-only">Ativar/Desativar Light Mode</span>
       <i class="ph-bold ph-sun"></i>
       <i class="ph-bold ph-moon"></i>
     </button>
@@ -32,12 +32,24 @@
 
     <!-- section actions buttons controls -->
     <section id="controls" class="flex">
-      <button class="ph ph-play-circle"></button>
-      <button class="ph ph-pause-circle"></button>
-      <button class="ph ph-timer secondary"></button>
-      <button class="ph ph-stop-circle secondary"></button>
-      <button class="ph ph-speaker-none secondary"></button>
-      <button class="ph ph-speaker-high"></button>
+      <button class="ph ph-play-circle">
+        <span class="sr-only">Iniciar Contador</span>
+      </button>
+      <button class="ph ph-pause-circle">
+        <span class="sr-only">Pausar Contador</span>
+      </button>
+      <button class="ph ph-timer secondary">
+        <span class="sr-only">Ajudar Contador</span>
+      </button>
+      <button class="ph ph-stop-circle secondary">
+        <span class="sr-only">Reiniciar Contador</span>
+      </button>
+      <button class="ph ph-speaker-none secondary">
+        <span class="sr-only">Iniciar Musica</span>
+      </button>
+      <button class="ph ph-speaker-high">
+        <span class="sr-only">Parar Musica</span>
+      </button>
     </section>
   </div>
 </body>
