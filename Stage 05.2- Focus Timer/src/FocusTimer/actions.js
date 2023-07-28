@@ -1,11 +1,18 @@
+import state from './state.js'
+
 export function toggleRunning() {
-  console.log('toggleRunning Function')
+  state.inRunning = document.documentElement.classList.toggle('running')
+}
+
+export function reset() {
+  state.inRunning = false
+  document.documentElement.classList.remove('running')
 }
 
 export function set() {
-  console.log('set Function')
+  
 }
 
 export function toggleMusic() {
-  console.log('toggleMusic Function')
+  state.isMute = document.documentElement.classList.toggle('music-on')
 }
