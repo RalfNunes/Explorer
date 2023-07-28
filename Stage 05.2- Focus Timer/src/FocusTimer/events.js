@@ -1,4 +1,4 @@
-import { controls } from "./elements.js";
+import { controls } from "./elements.js"
 import * as actions from './actions.js'
 // import { light } from "./elements.js";
 

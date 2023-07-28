@@ -4,4 +4,4 @@ import './toogle-dark.js'
 // exportado "*" agrupar "as" em "nomeQualquer" from "arquivo"
 import * as FocusTimer from './FocusTimer/index.js'
 
-FocusTimer.start(0,5)
+FocusTimer.start(0,6)
